@@ -1,5 +1,5 @@
 ///
-/// This implementation of a Static Array serves the purpose for me of implementing
+/// This implementation of a Static Array which serves the purpose for me of implementing
 /// an array in rust using unsafe features so I can get a grasp of how more low level
 /// memory management in Rust can be done
 ///
