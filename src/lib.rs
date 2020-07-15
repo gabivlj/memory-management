@@ -88,6 +88,9 @@ impl<T> StaticArray<T> {
     /// The same as get() but with mutable reference
     ///
     pub fn get_mut(&mut self, idx: isize) -> &mut T {
+        if idx >= self.current as isize {
+            panic!("out of bounds in idx: {} at size: {}", idx, self.current);
+        }
         return unsafe { &mut *self.ptr.offset(idx) };
     }
 }
