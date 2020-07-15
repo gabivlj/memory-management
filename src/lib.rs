@@ -43,7 +43,6 @@ impl<T> StaticArray<T> {
     ///
     ///
     pub fn new(size: usize) -> StaticArray<T> {
-        #[allow(unused_assignments)]
         let mut ptr: *mut T = 0 as *mut T;
         unsafe {
             let layout = Layout::array::<T>(size).unwrap();
